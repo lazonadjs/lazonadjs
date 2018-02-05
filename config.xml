@@ -72,7 +72,6 @@
 	<plugin name="cordova-plugin-inappbrowser" />
 	<plugin name="nl.kingsquare.cordova.background-audio" />
 	<plugin name="onesignal-cordova-plugin" />
-	<plugin name="onesignal-cordova-plugin" />
 	<platform name="android">
 		<plugin name="cordova-plugin-velda-devicefeedback" />
 	</platform>
