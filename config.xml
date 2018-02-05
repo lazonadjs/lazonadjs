@@ -71,7 +71,7 @@
 	<!-- ./default -->
 	<plugin name="cordova-plugin-inappbrowser" />
 	<plugin name="nl.kingsquare.cordova.background-audio" />
-	<plugin name="onesignal-cordova-plugin" />
+	<gap:plugin name="onesignal-cordova-plugin" spec="^2.1.1" source="npm" />
 	<platform name="android">
 		<plugin name="cordova-plugin-velda-devicefeedback" />
 	</platform>
