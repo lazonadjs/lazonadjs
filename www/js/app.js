@@ -31,7 +31,7 @@ angular.module("wlojii", ["ngCordova","ionic","ionMdInput","ionic-material","ion
 						console.log("onesignal:" + e);
 					}
 				}
-				window.plugins.OneSignal.startInit("22b0e384-d442-427f-a619-bc82cf6d11b5").handleNotificationOpened(notificationOpenedCallback).endInit();
+				window.plugins.OneSignal.startInit("7b08ed7a-b189-4897-918c-2939adcd8be0").handleNotificationOpened(notificationOpenedCallback).endInit();
 			}    
 
 
