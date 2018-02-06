@@ -68,10 +68,10 @@
 	<plugin name="cordova-plugin-splashscreen" />
 	<plugin name="cordova-plugin-statusbar" />
 	<plugin name="ionic-plugin-keyboard" />
+  <plugin name="onesignal-cordova-plugin" />
 	<!-- ./default -->
 	<plugin name="cordova-plugin-inappbrowser" />
 	<plugin name="nl.kingsquare.cordova.background-audio" />
-	<plugin name="onesignal-cordova-plugin" />
 	<platform name="android">
 		<plugin name="cordova-plugin-velda-devicefeedback" />
 	</platform>
