@@ -17,6 +17,13 @@ angular.module("wlojii", ["ngCordova","ionic","ionMdInput","ionic-material","ion
 			if(window.StatusBar) {
 				StatusBar.styleDefault();
 			}
+      
+      localforage.config({
+				driver : [localforage.WEBSQL,localforage.INDEXEDDB,localforage.LOCALSTORAGE],
+				name : "lnn",
+				storeName : "lnn",
+				description : "The offline datastore for LNN app"
+});
 
 
 		//required: cordova plugin add onesignal-cordova-plugin --save
