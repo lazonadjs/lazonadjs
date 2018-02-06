@@ -46,7 +46,7 @@
 	<preference name="DisallowOverscroll" value="true"/>
 	<preference name="SplashScreenDelay" value="1500"/>
 	<preference name="FadeSplashScreenDuration" value="0"/>
-	<preference name="android-minSdkVersion" value="16"/>
+	<preference name="android-minSdkVersion" value="23"/>
 	<preference name="BackupWebStorage" value="none"/>
 	<preference name="SplashScreen" value="screen"/>
 	<preference name="Orientation" value="default"/>
@@ -54,7 +54,6 @@
 		<preference name="loadUrlTimeoutValue" value="20000" />
 		<preference name="ErrorUrl" value="retry.html" />
 		<preference name="LoadingDialog" value="Start...,Please wait..." />
-   <uses-sdk android:targetSdkVersion="23" />
 	</platform>
 	<platform name="ios">
 		<preference name="ErrorUrl" value="Application Error" />
