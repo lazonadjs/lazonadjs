@@ -54,6 +54,11 @@
 		<preference name="loadUrlTimeoutValue" value="20000" />
 		<preference name="ErrorUrl" value="retry.html" />
 		<preference name="LoadingDialog" value="Start...,Please wait..." />
+    <!-- Requires cli-6.4.0 but we recommend using the latest version. -->
+<preference name="phonegap-version" value="cli-7.0.1" />
+
+<preference name="android-build-tool" value="gradle" />
+<preference name="android-minSdkVersion" value="15" />
 	</platform>
 	<platform name="ios">
 		<preference name="ErrorUrl" value="Application Error" />
