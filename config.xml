@@ -2,7 +2,7 @@
 <widget id="website.solidtechsoft.platform.app57a4cfecb0a00" version="200009" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>wlojii</name>
 	<description>Wlojii is a global, experiential, Liberian Music platform built for fans, directly from Liberian artists around the world. Wlojii members enjoy exclusively curated content that directly connect artists with their fans in multiple ways. The Platform offers high-fidelity, CD sound quality music, an opportunity to discover new artists and new Liberian music. Login, listen to available playlists or create your own. Be a part of The Wlojii Community.</description>
-	<author email="linwilvic@gmail.com" href="http://twigllc.com">Lincoln Ward</author>
+	<author email="linwilvic@gmail.com" href="http://twigllc.com/">Lincoln Ward</author>
 	<content src="index.html" />
 	<!-- Network Request Whitelist -->
 	<access origin="*" />
@@ -37,11 +37,11 @@
 	<platform name="android">
 		<allow-intent href="market:*" />
 	</platform>
-  <platform name="ios">
+	<platform name="ios">
 		<allow-intent href="itms:*" />
 		<allow-intent href="itms-apps:*" />
 	</platform>
-  <preference name="webviewbounce" value="false"/>
+	<preference name="webviewbounce" value="false"/>
 	<preference name="UIWebViewBounce" value="false"/>
 	<preference name="DisallowOverscroll" value="true"/>
 	<preference name="SplashScreenDelay" value="1500"/>
@@ -50,16 +50,16 @@
 	<preference name="BackupWebStorage" value="none"/>
 	<preference name="SplashScreen" value="screen"/>
 	<preference name="Orientation" value="default"/>
-  <platform name="android">
+	<platform name="android">
 		<preference name="loadUrlTimeoutValue" value="20000" />
 		<preference name="ErrorUrl" value="retry.html" />
 		<preference name="LoadingDialog" value="Start...,Please wait..." />
 	</platform>
-  <platform name="ios">
+	<platform name="ios">
 		<preference name="ErrorUrl" value="Application Error" />
 	</platform>
-
-
+	
+	
 
 	<!-- default -->
 	<plugin name="cordova-plugin-device" />
@@ -67,19 +67,17 @@
 	<plugin name="cordova-plugin-whitelist" />
 	<plugin name="cordova-plugin-splashscreen" />
 	<plugin name="ionic-plugin-keyboard" />
-
 	<!-- ./default -->
+	<plugin name="cordova-plugin-x-socialsharing" />
+	<plugin name="cordova-universal-links-plugin" />
 	<plugin name="cordova-plugin-inappbrowser" />
-	<plugin name="nl.kingsquare.cordova.background-audio" />
-	<platform name="android">
-		<plugin name="cordova-plugin-velda-devicefeedback" />
-    <plugin name="onesignal-cordova-plugin" />
-    <plugin name="cordova-plugin-statusbar" />
-
-  <feature name="StatusBar">
+	<plugin name="onesignal-cordova-plugin" />
+	<plugin name="cordova-plugin-statusbar" />
+	
+	<feature name="StatusBar">
 		<param name="ios-package" onload="true" value="CDVStatusBar"/>
 	</feature>
-
+	
 	<platform name="android">
 		<icon qualifier="ldpi" src="www/res/icon/android/ldpi-icon.png" />
 		<icon qualifier="mdpi" src="www/res/icon/android/mdpi-icon.png" />
@@ -96,7 +94,6 @@
 		<splash density="xxxhdpi" src="www/res/screen/android/xxxhdpi.png" />
 		<!-- ./not support using custom source -->
 	</platform>
-
 	<platform name="ios">
-	</platform>
+			</platform>
 </widget>
