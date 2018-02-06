@@ -37,13 +37,11 @@
 	<platform name="android">
 		<allow-intent href="market:*" />
 	</platform>
-  
-	<platform name="ios">
+  <platform name="ios">
 		<allow-intent href="itms:*" />
 		<allow-intent href="itms-apps:*" />
 	</platform>
-  
-	<preference name="webviewbounce" value="false"/>
+  <preference name="webviewbounce" value="false"/>
 	<preference name="UIWebViewBounce" value="false"/>
 	<preference name="DisallowOverscroll" value="true"/>
 	<preference name="SplashScreenDelay" value="1500"/>
@@ -53,26 +51,24 @@
 	<preference name="BackupWebStorage" value="none"/>
 	<preference name="SplashScreen" value="screen"/>
 	<preference name="Orientation" value="default"/>
-	
   <platform name="android">
 		<preference name="loadUrlTimeoutValue" value="20000" />
 		<preference name="ErrorUrl" value="retry.html" />
 		<preference name="LoadingDialog" value="Start...,Please wait..." />
 	</platform>
-  
-	<platform name="ios">
+  <platform name="ios">
 		<preference name="ErrorUrl" value="Application Error" />
 	</platform>
-  
-	
-  
+
+
+
 	<!-- default -->
 	<plugin name="cordova-plugin-device" />
 	<plugin name="cordova-plugin-console" />
 	<plugin name="cordova-plugin-whitelist" />
 	<plugin name="cordova-plugin-splashscreen" />
 	<plugin name="ionic-plugin-keyboard" />
-  
+
 	<!-- ./default -->
 	<plugin name="cordova-plugin-inappbrowser" />
 	<plugin name="nl.kingsquare.cordova.background-audio" />
@@ -84,7 +80,7 @@
   <feature name="StatusBar">
 		<param name="ios-package" onload="true" value="CDVStatusBar"/>
 	</feature>
-    
+
 	<platform name="android">
 		<icon qualifier="ldpi" src="www/res/icon/android/ldpi-icon.png" />
 		<icon qualifier="mdpi" src="www/res/icon/android/mdpi-icon.png" />
@@ -101,7 +97,7 @@
 		<splash density="xxxhdpi" src="www/res/screen/android/xxxhdpi.png" />
 		<!-- ./not support using custom source -->
 	</platform>
-    
+
 	<platform name="ios">
 	</platform>
 </widget>
