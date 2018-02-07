@@ -219,7 +219,7 @@ angular.module("wlojii.controllers", [])
 	// TODO: indexCtrl --|-- $scope.openWebView
 	// open WebView
 	$scope.openWebView = function($url){
-		var appWebview = window.open($url,"_self","location=no");
+		var appWebview = window.open($url,"_blank","location=no");
 		appWebview.addEventListener("loadstart",function(){
 			appWebview.insertCSS({
 				code: "body{background:#100;color:#100;font-size:1px;}body:after{content:'loading...';color:#fff;font-size:72px;position:absolute;bottom:50%;left:0;right:0; text-align: center; vertical-align: middle;}"
@@ -720,3 +720,4 @@ $ionicConfig.backButton.text("");
 	ionicMaterialInk.displayEffect();
 	controller_by_user();
 })
+
