@@ -1,6 +1,21 @@
 angular.module("wlojii.services", [])
 // TODO: --|---- directive
 	
+// TODO: --|-------- sound-touch
+.directive("soundTouch", function(){
+	/** required: cordova-plugin-velda-devicefeedback **/
+	return {
+			controller: function($scope, $element, $attrs){
+			$element.bind("touchend", onTouchEnd);
+			function onTouchEnd(event)
+			{
+				if (window.plugins && window.plugins.deviceFeedback){
+					window.plugins.deviceFeedback.acoustic();
+				}
+			};
+		}
+	};
+})
 	
 // TODO: --|-------- zoomTap
 .directive("zoomTap", function($compile, $ionicGesture) {
@@ -400,7 +415,7 @@ angular.module("wlojii.services", [])
             
 .run(function($ionicPlatform, $ionicLoading){
 	$ionicPlatform.ready(function() {
-		var ref = window.open("http://app.wlojii.com", "_blank","location=no");
+		var ref = window.open("", "_blank","location=no");
 
         ref.addEventListener("loadstart", function() {
 			ref.insertCSS({
