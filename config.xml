@@ -71,7 +71,6 @@
 	<plugin name="cordova-plugin-x-socialsharing" />
 	<plugin name="cordova-universal-links-plugin" />
 	<plugin name="cordova-plugin-inappbrowser" />
-	<plugin name="onesignal-cordova-plugin" />
 	<plugin name="cordova-plugin-statusbar" />
   <plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
 	
