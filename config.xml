@@ -73,16 +73,12 @@
 	<plugin name="cordova-plugin-inappbrowser" />
 	<plugin name="onesignal-cordova-plugin" />
 	<plugin name="cordova-plugin-statusbar" />
-  <plugin name="cordova-plugin-backgroundaudio" />
+  <plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
 	
 	<feature name="StatusBar">
 		<param name="ios-package" onload="true" value="CDVStatusBar"/>
 	</feature>
   
-  <feature name="BackgroundAudio">
-  <param name="ios-package" value="BackgroundAudio" />
-  <param name="onload" value="true" />
-</feature>
 	
 	<platform name="android">
 		<icon qualifier="ldpi" src="www/res/icon/android/ldpi-icon.png" />
