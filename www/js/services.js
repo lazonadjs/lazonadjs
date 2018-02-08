@@ -79,7 +79,7 @@ angular.module("wlojii.services", [])
 					zoomViewTemplate += "<div class=\"header-item title\"></div>";
 					zoomViewTemplate += "<div class=\"buttons buttons-right header-item\"><span class=\"right-buttons\"><button ng-click=\"closeZoomView()\" class=\"button button-icon ion-close button-clear button-dark\"></button></span></div>";
 					zoomViewTemplate += "</ion-header-bar>";
-					zoomViewTemplate += "<ion-content overflow-scroll=\"false\">";
+					zoomViewTemplate += "<ion-content overflow-scroll=\"true\">";
 					zoomViewTemplate += "<ion-scroll zooming=\"true\" overflow-scroll=\"false\" direction=\"xy\" style=\"width:100%;height:100%;position:absolute;top:0;bottom:0;left:0;right:0;\">";
 					zoomViewTemplate += "<img ng-src=\"{{ zoom_src }}\" style=\"width:100%!important;display:block;width:100%;height:auto;max-width:400px;max-height:700px;margin:auto;padding:10px;\"/>";
 					zoomViewTemplate += "</ion-scroll>";
