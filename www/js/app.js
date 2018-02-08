@@ -17,16 +17,9 @@ angular.module("wlojii", ["ngCordova","ionic","ionMdInput","ionic-material","ion
 			if(window.StatusBar) {
 				StatusBar.styleDefault();
 			}
-      
-      localforage.config({
-				driver : [localforage.WEBSQL,localforage.INDEXEDDB,localforage.LOCALSTORAGE],
-				name : "lnn",
-				storeName : "lnn",
-				description : "The offline datastore for LNN app"
-});
 
 
-		//required: cordova plugin add onesignal-cordova-plugin --save
+			//required: cordova plugin add onesignal-cordova-plugin --save
 			if(window.plugins && window.plugins.OneSignal){
 				window.plugins.OneSignal.enableNotificationsWhenActive(true);
 				var notificationOpenedCallback = function(jsonData){
@@ -43,8 +36,6 @@ angular.module("wlojii", ["ngCordova","ionic","ionMdInput","ionic-material","ion
 
 
 		});
-      
-      
 		$ionicPlatform.registerBackButtonAction(function (e){
 			if($ionicHistory.backView()){
 				$ionicHistory.goBack();
