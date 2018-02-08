@@ -11,6 +11,16 @@
 	<access origin="mailto:*" launch-external="yes"/>
 	<access origin="sms:*" launch-external="yes"/>
 	<access origin="market:*" launch-external="yes"/>
+  
+  
+ <allow-navigation href="http://localhost:8080/*"/>
+<feature name="CDVWKWebViewEngine">
+  <param name="ios-package" value="CDVWKWebViewEngine" />
+</feature>
+
+<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+  
+  
 	<!-- Navigation Whitelist -->
 	<allow-navigation href="http://*/*" />
 	<allow-navigation href="https://*/*" />
