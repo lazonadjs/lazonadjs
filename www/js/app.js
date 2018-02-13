@@ -20,19 +20,25 @@ angular.module("wlojii", ["ngCordova","ionic","ionMdInput","ionic-material","ion
 
 
 			//required: cordova plugin add onesignal-cordova-plugin --save
-			if(window.plugins && window.plugins.OneSignal){
-				window.plugins.OneSignal.enableNotificationsWhenActive(true);
-				var notificationOpenedCallback = function(jsonData){
-					try {
-						$timeout(function(){
-							$window.location = "#/wlojii/" + jsonData.notification.payload.additionalData.page ;
-						},200);
-					} catch(e){
-						console.log("onesignal:" + e);
-					}
-				}
-				window.plugins.OneSignal.startInit("5e53a148-b6cd-467e-93d1-b0ed9f0085f3").handleNotificationOpened(notificationOpenedCallback).endInit();
-			}    
+			// For Intel XDK and please add this to your app.js.
+
+document.addEventListener('deviceready', function () {
+  // Enable to debug issues.
+  // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+  
+  var notificationOpenedCallback = function(jsonData) {
+    console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
+  };
+
+  window.plugins.OneSignal
+    .startInit("5e53a148-b6cd-467e-93d1-b0ed9f0085f3")
+    .handleNotificationOpened(notificationOpenedCallback)
+    .endInit();
+  
+  // Call syncHashedEmail anywhere in your app if you have the user's email.
+  // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
+  // window.plugins.OneSignal.syncHashedEmail(userEmail);
+}, false);
 
 
 		});
