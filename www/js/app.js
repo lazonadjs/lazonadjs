@@ -31,7 +31,7 @@ document.addEventListener('deviceready', function () {
   };
 
   window.plugins.OneSignal
-    .startInit("5e53a148-b6cd-467e-93d1-b0ed9f0085f3")
+    .startInit("343155e9-4a43-4f1f-9947-3050cb486b31")
     .handleNotificationOpened(notificationOpenedCallback)
     .endInit();
   
