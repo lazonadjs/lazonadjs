@@ -1,6 +1,6 @@
 <?xml version='1.1' encoding='utf-8'?>
 <widget id="com.radio.LaZonaDjs.app" version="1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-	<name>wlojii</name>
+	<name>lazonadjs</name>
 	<description>LaZonadjs.Com Es una pagina de promoción musical que nació en la ciudad de Barcelona - España en Agosto 2012. Nos encargamos de promocionar los nuevos ¨Hits Mundiales¨ gracias a nuestro Equipo de Trabajo Llegamos a la mayoría de nuestros oyente y fans en nuestras redes sociales a nivel mundial.</description>
 	<author email="lazonadjs@gmail.com" href="http://lazonadjs.com/">lazonadjs</author>
 	<content src="index.html" />
