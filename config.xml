@@ -82,7 +82,6 @@
   <plugin name="cordova-plugin-statusbar" />
 	<plugin name="ionic-plugin-keyboard" />
   <plugin name="cordova-plugin-ionic-webview" />
-  <plugin name="onesignal-cordova-plugin" spec="2.2.5" />
 	<!-- ./default -->
   <plugin name="cordova-plugin-inappbrowser" />
   <plugin name="nl.kingsquare.cordova.background-audio" source="npm" />
