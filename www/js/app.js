@@ -31,7 +31,7 @@ document.addEventListener('deviceready', function () {
   };
 
   window.plugins.OneSignal
-    .startInit("343155e9-4a43-4f1f-9947-3050cb486b31")
+    .startInit("Id")
     .handleNotificationOpened(notificationOpenedCallback)
     .endInit();
   
